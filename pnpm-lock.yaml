@@ -1,0 +1,23 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .: {}
+
+  apps/operator:
+    dependencies:
+      '@pockettype-ds/ui':
+        specifier: workspace:*
+        version: link:../../packages/ui
+
+  packages/tokens: {}
+
+  packages/ui:
+    dependencies:
+      '@pockettype-ds/tokens':
+        specifier: workspace:*
+        version: link:../tokens
